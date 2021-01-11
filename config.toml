@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
-baseURL = "http://examplesite.org"
-title = "Airspace | Creative Agency Hugo Template"
+baseURL = ""
+title = "Studio Cadamuro Physiotherapie"
 theme = "airspace-hugo"
 themesDir = "themes"
 # post pagination
@@ -75,15 +75,15 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+logo = "images/logo_cadamuro.jpg"
 logo_width = "150px"
 # Meta data
-description = "This is meta description"
-author = "Themefisher"
+description = "Physiotherapie Bozen Fisio Fitness Bolzano"
+author = "Janne Cadamuro"
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
+mobile = "+39-0471-400405"
+email = "marcocadamuro73@gmail.com"
+location = "Valdagnostr. 6a; 39100 Bozen"
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
 # Google Analitycs
@@ -112,7 +112,7 @@ map_marker = "images/marker.png"
 
 # cookies
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
 
 ############################# social site ########################
@@ -140,15 +140,172 @@ link = "#"
 icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
 link = "#"
 
+################################ German Language ########################
+[Languages.de]
+languageName = "De"
+languageCode = "de-de"
+contentDir = "content/deutsch"
+weight = 1
+# copyright
+copyright = "Copyright &copy; Studio Cadamuro 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+
+######################### german navigation #############################
+# main menu
+[[Languages.de.menu.main]]
+name = "Startseite"
+URL = "/"
+weight = 1
+
+[[Languages.de.menu.main]]
+name = "Über uns"
+URL = "#about"
+weight = 2
+
+[[Languages.de.menu.main]]
+name = "Angebot"
+URL = "project"
+weight = 3
+
+[[Languages.de.menu.main]]
+name = "Öffnungszeiten"
+URL = "blog"
+weight = 4
+
+[[Languages.de.menu.main]]
+name = "Kontakt"
+URL = "contact"
+weight = 5
+
+
+# footer menu
+[[Languages.de.menu.footer]]
+name = "Über uns"
+URL = "about"
+weight = 1
+
+[[Languages.de.menu.footer]]
+name = "Project"
+URL = "project"
+weight = 2
+
+[[Languages.de.menu.footer]]
+name = "Service"
+URL = "service"
+weight = 3
+
+[[Languages.de.menu.footer]]
+name = "Pricing"
+URL = "pricing"
+weight = 4
+
+[[Languages.de.menu.footer]]
+name = "FAQ"
+URL = "faq"
+weight = 5
+
+[[Languages.de.menu.footer]]
+name = "Kontakt"
+URL = "contact"
+weight = 6
+
+################################ Italian Language ########################
+[Languages.it]
+languageName = "It"
+languageCode = "it-it"
+contentDir = "content/italiano"
+weight = 1
+# copyright
+copyright = "Copyright &copy; Studio Cadamuro 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+
+######################### italian navigation #############################
+# main menu
+[[Languages.it.menu.main]]
+name = "Start"
+URL = "/"
+weight = 1
+
+[[Languages.it.menu.main]]
+name = "Offerte"
+URL = "about"
+weight = 2
+
+[[Languages.it.menu.main]]
+name = "Offerte"
+URL = "project"
+weight = 3
+
+[[Languages.it.menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 4
+
+[[Languages.it.menu.main]]
+weight = 5
+name = "Pages"
+hasChildren = true
+
+  [[Languages.it.menu.main]]
+  parent = "Pages"
+  name = "FAQ"
+  URL = "faq"
+
+  [[Languages.it.menu.main]]
+  parent = "Pages"
+  name = "Pricing"
+  URL = "pricing"
+
+  [[Languages.it.menu.main]]
+  parent = "Pages"
+  name = "Service"
+  URL = "service"
+
+[[Languages.it.menu.main]]
+name = "Kontakt"
+URL = "contact"
+weight = 6
+
+
+# footer menu
+[[Languages.it.menu.footer]]
+name = "Über uns"
+URL = "about"
+weight = 1
+
+[[Languages.it.menu.footer]]
+name = "Project"
+URL = "project"
+weight = 2
+
+[[Languages.it.menu.footer]]
+name = "Service"
+URL = "service"
+weight = 3
+
+[[Languages.it.menu.footer]]
+name = "Pricing"
+URL = "pricing"
+weight = 4
+
+[[Languages.it.menu.footer]]
+name = "FAQ"
+URL = "faq"
+weight = 5
+
+[[Languages.it.menu.footer]]
+name = "Kontakt"
+URL = "contact"
+weight = 6
 
 ################################ English Language ########################
 [Languages.en]
 languageName = "En"
-languageCode = "en-us"
+languageCode = "US-en"
 contentDir = "content/english"
 weight = 1
 # copyright
-copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+copyright = "Copyright &copy; Studio Cadamuro 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
 
 
 ######################### english navigation #############################
